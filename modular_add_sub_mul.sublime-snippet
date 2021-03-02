@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+ll add(ll a,ll b)
+{
+	if(a<0)	a=(a+mod)%mod;
+	if(b<0)	b=(b+mod)%mod;
+	ll ans=0;
+	ans=(a%mod + b%mod)%mod;
+	return ans;
+}
+ll sub(ll a,ll b)
+{
+	if(a<0)	a=(a+mod)%mod;
+	if(b<0)	b=(b+mod)%mod;
+	ll ans=0;
+	ans=(a%mod - b%mod + mod)%mod;
+	return ans;
+}
+ll mul(ll a,ll b)
+{
+	if(a<0)	a=(a+mod)%mod;
+	if(b<0)	b=(b+mod)%mod;
+	ll ans=1;
+	ans=(a%mod * b%mod)%mod;
+	return ans;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>modular_add_sub_mul</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

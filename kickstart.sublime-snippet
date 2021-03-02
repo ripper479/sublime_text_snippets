@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+#include <bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
+#define mod 1000000007
+
+
+signed main() 
+{
+   ios_base::sync_with_stdio(0);
+   cin.tie(0);cout.tie(0);
+   ll t;
+   cin>>t;
+   ll m=1;
+   while(t--)
+   {
+      
+      cout<<"Case #"<<m++<<": ";
+   } 
+   return 0;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>kickstart</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

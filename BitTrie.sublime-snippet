@@ -1,0 +1,47 @@
+<snippet>
+	<content><![CDATA[
+struct node{
+    node* child[2];
+    ll cnt;
+    node(){
+        cnt=0;
+        child[0]=NULL;
+        child[1]=NULL;
+    }
+};
+struct BitTrie{
+    node* root;
+    BitTrie(){
+        root=new node();
+    }
+    void insert(ll x){
+        node* curr=root;
+        for(ll i=31;i>=0;i--){
+            ll bit=(x>>i)&1;
+            curr->cnt++;
+            if(curr->child[bit]!=NULL){
+                curr=curr->child[bit];
+            }
+            else{
+                curr->child[bit]=new node();
+                curr=curr->child[bit];
+            }
+        }
+        curr->cnt++;
+    }
+    void erase(ll x){
+        node* curr=root;
+        for(ll i=31;i>=0;i--){
+            ll bit=(x>>i)&1;
+            curr->cnt--;
+            curr=curr->child[bit];
+        }
+        curr->cnt--;
+    }
+};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>BitTrie</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

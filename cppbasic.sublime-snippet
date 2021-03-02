@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+
+using namespace std;
+using ll = long long;
+#define mod 1000000007
+
+void solve(){
+    
+}
+ 
+ 
+signed main(){
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+    ll tc=1;//cin>>_tc;
+    for(ll i=1;i<=tc;i++){
+        //cout<<"Case #"<<i<<": ";
+        solve();
+    }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cpp_basic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
